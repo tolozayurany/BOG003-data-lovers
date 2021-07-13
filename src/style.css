@@ -1,0 +1,94 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: url(./img/fondoPoke.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header {
+  background: rgba(8, 34, 78, 0.71);
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#img-logo-hder {
+  width: 170px;
+ position: relative;
+ bottom: 25px;
+}
+
+header nav {
+
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgba(8, 34, 78, 0);
+    position: relative;
+    bottom: 35px;
+    right: 50px;
+
+}
+
+header nav a:hover {
+
+    background: rgba(255, 252, 252, 0.548);
+    border-radius: 20px;
+    border: 1.5px solid gray;
+    
+}
+
+header nav a {
+
+    font-size: large;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 245, 238, 0.993);
+    padding: 5px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 800px) {
+
+   .container {
+        flex-direction: column;
+    }
+
+}
+
+
+
+    
+
+
+
+
+
+
+/*a 
+{
+  position: relative;
+    bottom: 60px;
+    left: 20%;
+    display:inline-block;
+    margin: 70px;
+    
+}*/
