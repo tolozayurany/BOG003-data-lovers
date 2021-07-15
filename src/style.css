@@ -4,11 +4,14 @@
 }
 
 body {
-  background: url(./img/fondoPoke.jpg);
+  background: url(./img/fondopoke.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .container {
@@ -17,11 +20,10 @@ body {
 }
 
 header {
-  background: rgba(8, 34, 78, 0.71);
+  background: rgba(8, 34, 78, 0.75);
   width: 100%;
   height: 40px;
   padding: 20px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +50,6 @@ header nav {
 
 }
 
-
 header nav a {
     font-size: large;
     font-family: 'Lato', sans-serif;
@@ -64,66 +65,58 @@ header nav a:hover {
   border: 1px solid gray;
 }
 
-@media (max-width: 1023px) {
-
-   .body {
-        font-size: 15px;
-    
-      
-}  
-
-    }
-    footer {
-    
-      position: absolute;
-      bottom: 0px;
-      background: rgba(243, 243, 243, 0.822);
-      width: 100%;
-      height: 30px;
-      
-  
-  }
-  
-  footer h6 {
-  
-      text-align: center;
-      position: relative;
-      top: 8px;
-      font-size: small;
-      font-family:'Courier New', Courier, monospace;
-      color: grey;
-      
-  }
-
-
-  
+main{
+    flex:1;
+}
 
 .wcometitle {
 
-  text-align: center;
-  padding-top: 100px;
-  font-family: 'Denk One', sans-serif;
-  font-size: 60px;
-  color: rgba(23, 86, 218, 0.80);  
+    text-align: center;
+    padding-top: 140px;
+    font-family: 'Denk One', sans-serif;
+    font-size: 70px;
+    color: rgba(8, 34, 78, 0.85);  
 }
-
+  
 .wcometext {
-
+  
   text-align: center;
   padding-top: 50px;
   font-family:  sans-serif;
-  font-size: 18px;
-color: rgba(54, 54, 54, 0.89); 
+  font-size: 20px;
+  color: rgba(54, 54, 54, 0.89); 
 }
-
+  
 #logo {
-
-    width: 300px;
+  
+    width: 350px;
     margin: auto;
     display: block; 
-    padding-top: 40px;
+    padding-top: 50px;
     position: relative;
     left: 20px;
-
+  
 }
 
+footer {
+      
+    background: rgba(243, 243, 243, 0.822);
+    width: 100%;
+    height: 30px;
+}
+
+footer h6 {
+    text-align: center;
+    position: relative;
+    top: 8px;
+    font-size: small;
+    font-family:'Courier New', Courier, monospace;
+    color: grey;
+}
+
+/*@media only screen and (max-width: 700px) {
+
+    .wcometitle {
+        color: black;  
+    }
+    }*/
