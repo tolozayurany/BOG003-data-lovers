@@ -15,8 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet" />
 </head>
 
-<body>
-  <section class="container">
+<body id=bdy>
+  <section class="containerhder" id="headersection">
     <header id="hder">
       <img src="img/logopequeño.png" alt="short-logo" id="img-logo-hder" />
 
@@ -24,25 +24,44 @@
         <a id="btn-home">Home</a>
         <a id="btn-pokedex">PokeDex</a>
         <a id="btn-type">Type</a>
-        
-
-        </ul>
         <a id="btn-statistics">Chart</a>
       </nav>
     </header>
   </section>
 
   <main>
-    <section>
+
+
+    <section id="screenwelcome">
       <h1 class="wcometitle">¡Bienvenidos Fans!</h1>
       <h6 class="wcometext">¡Descubre las habilidades de los pokémon de<br>Kanto y Johto
         y conquista más batallas!</h6>
       <img src="./img/logopokefans.png" alt="logo" id="logo">
     </section>
+
+
+
+    <section id="screenpokedex" style="display: none;"> 
+
+          
+        <button type="button" id="btn-a-z">A-Z</button> 
+        <br>
+        <button type="button" id="btn-z-a">Z-A</button>
+      
+      
+
+      <div id="cards"></div>
+
+      
+    </section>
+
+ 
   </main>
+
 
   <footer>
     <h6>© Poke Fans-2021</h6>
+    
   </footer>
   
   <script src="main.js" type="module"></script>
