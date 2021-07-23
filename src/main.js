@@ -3,19 +3,19 @@ import data from './data/pokemon/pokemon.js';
 
 
 
-console.log(orderNames(data.pokemon, ['name'], 1));
 
-document.getElementById("btn-pokedex").addEventListener("click", () => {  
-
-            document.getElementById("screenwelcome").style.display ="none";
-            document.getElementById("bdy").style.background ="#F9F8E8";   
-            document.getElementById("screenpokedex").style.display ="block";
-           
-            
-});
+let allData = data.pokemon;
 
 
-        data.pokemon.forEach((e)=>{
+  
+
+
+
+
+const showData = (allData) =>{
+
+    
+        allData.forEach((e)=>{
 
         let backgroundCard = document.createElement("div"); 
         let pokeFont = document.createElement("img");     
@@ -44,12 +44,49 @@ document.getElementById("btn-pokedex").addEventListener("click", () => {
         nameText.setAttribute("id", "pokename");  // pokename es el h2 que contiene el nombre de la data
         backgroundCard.appendChild(nameText);                
        
-
+        const select = document.getElementById("order-select");
+        select.addEventListener('change', () => {
+            
+            let orderFuntion = orderNames(allData, select.value);
+                showData(orderFuntion);
+            
+        });
     
     });
+};
+   
 
+
+document.getElementById("btn-pokedex").addEventListener("click", () => {  
+
+    document.getElementById("screenwelcome").style.display ="none";
+    document.getElementById("cards").innerHTML = " ";
+    document.getElementById("bdy").style.background ="#F9F8E8";   
+    document.getElementById("screenpokedex").style.display ="block";
+    showData(allData);
+    showData(allData, "order-default");
+    
+});
+
+ const select = document.getElementById("order-select");
+        select.addEventListener('change', () => {
+           document.getElementById("cards").innerHTML = " ";
+         let orderFuction = orderNames(allData,  select.value);
+         showData(orderFuction);
+    });
+       
+
+     
+
+        
+
+
+  
+
+ 
+        
             
-      
+     
     
 
   
@@ -76,7 +113,5 @@ document.getElementById("btn-pokedex").addEventListener("click", () => {
 
 
 //document.getElementById("imgpoke").src=data.pokemon[i].img;
-
-
 
 
