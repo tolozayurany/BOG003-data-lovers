@@ -83,11 +83,7 @@ main{
 .wcometitle {
 
     text-align: center;
-<<<<<<< HEAD
-    margin-top:10vh;
-=======
     margin-top: 11vh;
->>>>>>> 23ae02df875cc269277b36cd3ff3004a864e9781
     font-family: 'Denk One', sans-serif;
     font-size: 60px;
     color: rgba(8, 34, 78, 0.85);  
@@ -115,11 +111,7 @@ main{
 
 footer {
       
-<<<<<<< HEAD
-    background: rgba(213, 213, 213);
-=======
     background: rgb(213, 213, 213);
->>>>>>> 23ae02df875cc269277b36cd3ff3004a864e9781
     width: 100%;
     height: 30px;
     position: fixed;
@@ -132,52 +124,6 @@ footer h6 {
     top: 8px;
     font-size: small;
     font-family:'Courier New', Courier, monospace;
-<<<<<<< HEAD
-    color: rgb(87, 87, 87);
-}
-
-/*Estilos a la imagen de fondo de la tarjeta*/
-#imgFont{
-  width: 200px;
-  height: 230px;
-  border-radius: 15px;
-}
-
-/*Estilos a toda la tarjeta en general*/
-#card{
-  display: inline-flex;
-  position: relative;
-  flex-wrap: wrap;
-  z-index: 0;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 3vh;
-}
-
-/*Estilos al contenido de las tarjetas*/
-
-#infoCard{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Lato', sans-serif;
-  color: rgba(59, 60, 62) ;
-  z-index: 1;
-  
-}
-
-
-/*Solo hace falta lo de space between para que se de un espacio correcto entre las tarjetas y se distribuyan sin tener que darle un margen
-o cosas así específcias, sino a todas de una*/
-
-/*Necesito crear algo que contenga solo al contenido de la tarjeta porque dentro de CARD está toda la info
-de la tarjeta más la imagen de fondo, pero necesito aplicarle estilos solo al contenido (lo que es imagen del pokemon, nombre y numero), 
-porque no puedo tratar la imagen del background igual que el resto de contenido por ejemplo para centrarlos y todo eso.
-
-
-/*@media only screen and (max-width: 700px) {
-=======
     color: rgb(87,87,87);
 }
 
@@ -196,7 +142,6 @@ porque no puedo tratar la imagen del background igual que el resto de contenido 
   height: 300px;
   }
 
-  
 
 .cardcontainer { 
   width: 240px ;
@@ -205,7 +150,6 @@ porque no puedo tratar la imagen del background igual que el resto de contenido 
 }
 
 .cardcontainer:hover {
->>>>>>> 23ae02df875cc269277b36cd3ff3004a864e9781
 
   box-shadow: 4px 4px 4px 4px rgb(46, 46, 46);
   z-index: 4;
@@ -236,4 +180,10 @@ porque no puedo tratar la imagen del background igual que el resto de contenido 
   font-size: 20px;
   
   
+}
+
+#boxcard{
+  font-family: 'Lato', sans-serif;
+  color: rgba(46, 46, 46);
+  font-size: 30px;
 }

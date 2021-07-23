@@ -15,13 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet" />
 </head>
 
-<<<<<<< HEAD
-<body id="bdy">
-  <section class="container" id="headerSection">
-=======
 <body id=bdy>
   <section class="containerhder" id="headersection">
->>>>>>> 23ae02df875cc269277b36cd3ff3004a864e9781
     <header id="hder">
       <img src="img/logopequeño.png" alt="short-logo" id="img-logo-hder" />
 
@@ -35,29 +30,25 @@
   </section>
 
   <main>
-<<<<<<< HEAD
-    <section id="screenWelcome" >
-=======
-
 
     <section id="screenwelcome">
->>>>>>> 23ae02df875cc269277b36cd3ff3004a864e9781
+
       <h1 class="wcometitle">¡Bienvenidos Fans!</h1>
       <h6 class="wcometext">¡Descubre las habilidades de los pokémon de<br>Kanto y Johto
         y conquista más batallas!</h6>
       <img src="./img/logopokefans.png" alt="logo" id="logo">
     </section>
 
-
-
     <section id="screenpokedex" style="display: none;"> 
 
-          
-        <button type="button" id="btn-a-z">A-Z</button> 
-        <br>
-        <button type="button" id="btn-z-a">Z-A</button>
-      
-      
+      <select id="orderSelect">
+
+        <option value="default">order</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+        <option value="asc">001</option>
+        <option value="des">251</option>
+      </select>
 
       <div id="cards"></div>
 
@@ -67,14 +58,6 @@
  
   </main>
   
-  <section id="screenPokedex" style="display: none;">
-
-    <button id="btnOrderAZ">A-Z</button>
-    <button id="btnOrderZA">Z-A</button>
-
-    </section>
-    
-
 
   <footer>
     <h6>© Poke Fans-2021</h6>
