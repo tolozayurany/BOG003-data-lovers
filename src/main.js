@@ -27,7 +27,6 @@ const showData = (poke) => {
         imgPoke.setAttribute("id", "pokeimg");   // pokeimg es la img que contiene la imagen de la data
         backgroundCard.appendChild(imgPoke);
 
-
         let nameText = document.createElement("h2");
         nameText.innerText = e.name;
         nameText.setAttribute("id", "pokename");  // pokename es el h2 que contiene el nombre de la data
@@ -44,7 +43,6 @@ select.addEventListener('change', () => {
     document.getElementById("cards").innerHTML = " ";
     showData(orderFunction);
 });
-
 
 //let btnPokedex = document.getElementById("btn-pokedex");
 document.getElementById("btn-pokedex").addEventListener("click", () => {

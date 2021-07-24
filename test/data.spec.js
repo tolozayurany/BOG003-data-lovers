@@ -1,15 +1,18 @@
-import { } from '../src/data.js';
+import { orderNames } from '../src/data.js';
 
 
-describe('example', () => {
+describe('orderNames', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof orderNames).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns `orderAz`', () => {
+    expect(orderAz(data.sort)).toBe('orderAz');
   });
 });
+
+
+
 
 
 describe('anotherExample', () => {
