@@ -201,7 +201,8 @@ footer h6 {
 }
 
 #modal {
-
+      
+      display: flex;
       display: none; 
 			position: fixed; 
 			z-index: 1;
@@ -213,7 +214,7 @@ footer h6 {
 			overflow: auto; 
 			background-color: rgb(0,0,0);
 			background-color: rgba(0,0,0,0.4);
-      border: 3px solid rgb(0, 255, 0);
+     
   
 
 
