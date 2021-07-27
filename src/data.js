@@ -4,7 +4,7 @@
   return 'example';
 };*/
 
-export const orderNames = (data, sortBy) => {
+export const orderData = (data, sortBy) => {
   let orderAz = data.sort((a, b) => {
     if (a.name > b.name) {
       return 1;
@@ -12,16 +12,15 @@ export const orderNames = (data, sortBy) => {
     if (a.name < b.name) {
       return -1;
     }
-
-    return 0;
+      
+    
   });
 
   if (sortBy === "A-Z") {
     
     return orderAz;
    
-  } else if (sortBy === "Z-A") {
-   
+  } else if (sortBy === "Z-A") { 
     return orderAz.reverse();
   }
 
@@ -32,16 +31,16 @@ export const orderNames = (data, sortBy) => {
     if (a.num < b.num) {
       return -1;
     }
-
-    return 0;
+    
   });
 
   if (sortBy === "asc" || sortBy === "order-default" ) {
     
     return orderNum;
    
-  } else if (sortBy === "des") {
+  } else  {
    
-    return orderNum.reverse();
+    return orderNum.reverse()
   }
+  
 };
