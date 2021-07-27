@@ -66,7 +66,7 @@ header nav a {
     padding: 5px;
     text-align: center;
     flex-grow: 1;
-   font-weight: bold;
+    font-weight: bold;
 }
 
 header nav a:hover {
@@ -140,7 +140,13 @@ footer h6 {
 #boxcard {
  
   height: 300px;
+   font-family: 'Lato', sans-serif;
+  color: rgba(46, 46, 46);
+  font-size: 30px;
+  border: 3px solid red;
+  text-align: center;
   }
+  
 
 
 .cardcontainer { 
@@ -164,26 +170,60 @@ footer h6 {
 
 }
 
+
+
 #pokeimg {
   position: relative;
   bottom:220px ;
   width:130px;
-  left: 50px;
- 
+  
+  border: 3px solid red;
+  
  
 }
 
-#pokename {
+#btn-pokename {
+  display:  flex;
   position: relative;
+  left: 28%;
   bottom: 220px;
-  text-align: center;
-  font-size: 20px;
-  
+  align-items:center;
+  justify-content:center ;
+  font-size: 50%;
+  color: rgb(25, 39, 238);
   
 }
 
-#boxcard{
-  font-family: 'Lato', sans-serif;
-  color: rgba(46, 46, 46);
-  font-size: 30px;
+#order-select {
+
+  position: relative;
+  left: 20%;
+}
+
+#modal {
+
+      display: none; 
+			position: fixed; 
+			z-index: 1;
+			padding-top: 100px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%; 
+			overflow: auto; 
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0,0.4);
+      border: 3px solid rgb(0, 255, 0);
+  
+
+
+}
+
+.modal-content {
+  background-color: #7fe030;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-top: 10px solid #58abb7;
+  width: 60%;
 }

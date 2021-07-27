@@ -1,9 +1,12 @@
-import { orderNames } from './data.js';
+import { orderData } from './data.js';
 import data from './data/pokemon/pokemon.js';
+
 
 let allData = data.pokemon;
 
+
 const showData = (poke) => {
+
 
     poke.forEach((e) => {
 
@@ -21,39 +24,53 @@ const showData = (poke) => {
         numText.setAttribute("id", "pokenum");  // poke num es el h2 que contiene el numero de la data
         backgroundCard.appendChild(numText);
 
-        let containerImport = document.createElement("div")
+
+
         let imgPoke = document.createElement("img");
         imgPoke.src = e.img;
         imgPoke.setAttribute("id", "pokeimg");   // pokeimg es la img que contiene la imagen de la data
-        backgroundCard.appendChild(imgPoke);
+        backgroundCard.appendChild(imgPoke)
 
 
-        let nameText = document.createElement("h2");
+
+        let nameText = document.createElement("button");
         nameText.innerText = e.name;
-        nameText.setAttribute("id", "pokename");  // pokename es el h2 que contiene el nombre de la data
+        nameText.setAttribute("id", "btn-pokename");  // btn-pokename es el button que contiene el nombre de la data
         backgroundCard.appendChild(nameText);
+        nameText.addEventListener("click", () => {
+
+            let modal = document.getElementById("modal");
+            modal.style.display = "block";
+
+            /*let modalClose = document.createElement("div");
+                modalClose.setAttribute("id", "modal-close"); 
+                modalClose.addEventListener("click", () => {  
+                    modalCard.style.display = "none";
+
+                 });*/
+
+        });
+
 
     });
-
 };
 
-let select = document.getElementById("orderSelect");
+let select = document.getElementById("order-select");
 select.addEventListener('change', () => {
-    let orderFunction = orderNames(allData, select.value);
-    //funcion de limpiar los datos del arreglo
+    let orderFuction = orderData(allData, select.value);
     document.getElementById("cards").innerHTML = " ";
-    showData(orderFunction);
+    showData(orderFuction);
 });
 
 
-//let btnPokedex = document.getElementById("btn-pokedex");
 document.getElementById("btn-pokedex").addEventListener("click", () => {
     document.getElementById("cards").innerHTML = " ";
     document.getElementById("screenwelcome").style.display = "none";
     document.getElementById("bdy").style.background = "#F9F8E8";
     document.getElementById("screenpokedex").style.display = "block";
-    orderNames(allData, 'asc');
+    orderData(allData, "order-default");
     showData(allData);
+
 });
 
 
