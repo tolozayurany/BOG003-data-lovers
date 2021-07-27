@@ -33,14 +33,58 @@ const showData = (poke) => {
 
 
 
-        let nameText = document.createElement("button");
-        nameText.innerText = e.name;
-        nameText.setAttribute("id", "btn-pokename");  // btn-pokename es el button que contiene el nombre de la data
-        backgroundCard.appendChild(nameText);
-        nameText.addEventListener("click", () => {
+        let nameTextBtn = document.createElement("button");
+        nameTextBtn.innerText = e.name;
+        nameTextBtn.setAttribute("id", "btn-pokename");  // btn-pokename es el button que contiene el nombre de la data
+        backgroundCard.appendChild(nameTextBtn);
+        nameTextBtn.addEventListener("click", () => {
 
             let modal = document.getElementById("modal");
+            let modalContent = document.getElementById("modal-content");
+
+            let modalBackground = document.createElement("div");
+            modalBackground.setAttribute("id", "modal-background");
+            modal.appendChild(modalBackground);
+            modalBackground.appendChild(modalContent);
+
+
             modal.style.display = "block";
+
+            let numTextModal = document.createElement("h2");
+            numTextModal.innerText = e.num;
+            numTextModal.setAttribute("id", "pokenum-modal");  // poke num es el h2 que contiene el numero de la data
+            modalContent.appendChild(numTextModal);
+
+            let imgPokeModal = document.createElement("img");
+            imgPokeModal.src = e.img;
+            imgPokeModal.setAttribute("id", "pokeimg-modal");   // pokeimg es la img que contiene la imagen de la data
+            modalContent.appendChild(imgPokeModal)
+
+            let nameTextModal = document.createElement("h2");
+            nameTextModal.innerText = e.name;
+            nameTextModal.setAttribute("id", "pokename-modal");  // pokename es el button que contiene el nombre de la data
+            modalContent.appendChild(nameTextModal);
+
+            let typeModal = document.createElement("h2");
+            typeModal.innerText = e.type;           
+            typeModal.setAttribute("id", "type-modal");
+            modalContent.appendChild(typeModal);
+
+            let heightModal = document.createElement("h2");
+            heightModal.innerText = e.size.height;
+            heightModal.setAttribute("id", "height-modal");
+            modalContent.appendChild(heightModal);
+
+            let weightModal = document.createElement("h2");
+            weightModal.innerText = e.size.weight;
+            weightModal.setAttribute("id", "weight-modal");
+            modalContent.appendChild(weightModal);
+
+            let resistantModal = document.createElement("h2");
+            resistantModal.innerText = e.resistant;
+            resistantModal.setAttribute("id", "resistant-modal");
+            modalContent.appendChild(resistantModal);
+
 
             /*let modalClose = document.createElement("div");
                 modalClose.setAttribute("id", "modal-close"); 
