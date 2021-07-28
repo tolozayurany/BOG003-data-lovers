@@ -37,6 +37,8 @@ const showData = (poke) => {
         nameTextBtn.innerText = e.name;
         nameTextBtn.setAttribute("id", "btn-pokename");  // btn-pokename es el button que contiene el nombre de la data
         backgroundCard.appendChild(nameTextBtn);
+
+
         nameTextBtn.addEventListener("click", () => {
 
             let modal = document.getElementById("modal");
@@ -46,7 +48,6 @@ const showData = (poke) => {
             modalBackground.setAttribute("id", "modal-background");
             modal.appendChild(modalBackground);
             modalBackground.appendChild(modalContent);
-
 
             modal.style.display = "block";
 
@@ -65,10 +66,14 @@ const showData = (poke) => {
             nameTextModal.setAttribute("id", "pokename-modal");  // pokename es el button que contiene el nombre de la data
             modalContent.appendChild(nameTextModal);
 
-            let typeModal = document.createElement("h2");
-            typeModal.innerText = e.type;           
-            typeModal.setAttribute("id", "type-modal");
-            modalContent.appendChild(typeModal);
+
+            e.type.forEach((element) => {
+                let typeModal = document.createElement("h2");
+                typeModal.innerText = element;
+                typeModal.setAttribute("id", "type-modal");
+                modalContent.appendChild(typeModal);
+
+            });
 
             let heightModal = document.createElement("h2");
             heightModal.innerText = e.size.height;
@@ -80,18 +85,21 @@ const showData = (poke) => {
             weightModal.setAttribute("id", "weight-modal");
             modalContent.appendChild(weightModal);
 
-            let resistantModal = document.createElement("h2");
-            resistantModal.innerText = e.resistant;
-            resistantModal.setAttribute("id", "resistant-modal");
-            modalContent.appendChild(resistantModal);
+            e.resistant.forEach((element) => {
+                let resistantModal = document.createElement("h2");
+                resistantModal.innerText = element;
+                resistantModal.setAttribute("id", "resistant-modal");
+                modalContent.appendChild(resistantModal);
 
+            });
 
-            /*let modalClose = document.createElement("div");
-                modalClose.setAttribute("id", "modal-close"); 
-                modalClose.addEventListener("click", () => {  
-                    modalCard.style.display = "none";
-
-                 });*/
+            /*let modalClose = document.getElementById("close");
+            modalClose.addEventListener("click", () => {
+            
+                if (e.target == modalClose) {
+                    modal.style.display = "none";
+                  }
+            });*/
 
         });
 
@@ -114,7 +122,6 @@ document.getElementById("btn-pokedex").addEventListener("click", () => {
     document.getElementById("screenpokedex").style.display = "block";
     orderData(allData, "order-default");
     showData(allData);
-
 });
 
 
