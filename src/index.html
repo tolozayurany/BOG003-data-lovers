@@ -23,7 +23,6 @@
       <nav>
         <a id="btn-home">Home</a>
         <a id="btn-pokedex">PokeDex</a>
-        <a id="btn-type">Type</a>
         <a id="btn-statistics">Chart</a>
       </nav>
     </header>
@@ -42,13 +41,37 @@
     <section id="screenpokedex" style="display: none;">
 
 
-      <select id="order-select">
+      <select id="order-select" class="order-filter">
         <option value="order-default">Order</option>
         <option value="A-Z">A-Z</option>
         <option value="Z-A">Z-A</option>
         <option value="asc">001-251</option>
         <option value="des">251-001</option>
       </select>
+
+      <select id="filter-select" class="order-filter">
+        <option value="filter-default">Type</option>
+        <option value="steel">Steel</option>
+        <option value="water">Water</option>
+        <option value="bug">Bug</option>
+        <option value="dragon">Dragon</option>
+        <option value="electric">Electric</option>
+        <option value="ghost">Ghost</option>
+        <option value="fire">Fire</option>
+        <option value="fairy">Fairy</option>
+        <option value="ice">Ice</option>
+        <option value="fighting">Fighting</option>
+        <option value="normal">Normal</option>
+        <option value="grass">Grass</option>
+        <option value="psychic">Psychic</option>
+        <option value="rock">Rock</option>
+        <option value="dark">Dark</option>
+        <option value="ground">Ground</option>
+        <option value="poison">Poison</option>
+        <option value="flying">Flying</option>
+
+      </select>
+    
 
 
       <div id="cards"></div>
@@ -73,3 +96,4 @@
 </body>
 
 </html>
+
