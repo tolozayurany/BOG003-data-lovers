@@ -192,12 +192,15 @@ footer h6 {
 box-shadow: 4px 4px 4px 4px rgb(129, 129, 129);
 }
 
-#order-select  {
-  display: flex;
+
+.order-filter{
+  display: inline-flex;
   position: relative;
-  left: 80%;
+  left: 75%;
   margin-top: 2%;
+  margin-left: 2%;
   width: 9%;
+  min-width:90px;
   height: 5vh;
   border-radius: 20px;
   font-size: 3vh;
@@ -207,11 +210,14 @@ box-shadow: 4px 4px 4px 4px rgb(129, 129, 129);
   background:  linear-gradient(#3ad0d594, #3a4fd58e);
 
 }
+
+
+
 option {
   background-color:#4f60d18e;  
   font-family: 'Lato', sans-serif;
   color: rgb(23, 24, 24);
-  font-weight: bold;
+  font-size:smaller ;
   
 }
 

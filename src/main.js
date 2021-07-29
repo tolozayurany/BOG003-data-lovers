@@ -1,4 +1,4 @@
-import { orderData } from './data.js';
+import { orderData, filterData } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 
@@ -46,12 +46,12 @@ const showData = (poke) => {
             modal.innerHTML = "";
             modalContent.innerHTML = "";
             let modalClose = document.createElement("span");
-             modalClose.setAttribute("id", "close");
+            modalClose.setAttribute("id", "close");
             let modalTextClose = document.createTextNode("X");
-             modalClose.appendChild(modalTextClose);
-             modalContent.appendChild(modalClose);
+            modalClose.appendChild(modalTextClose);
+            modalContent.appendChild(modalClose);
 
-            modalClose.addEventListener("click", () => { 
+            modalClose.addEventListener("click", () => {
 
                 modal.style.display = "none";
             });
@@ -62,13 +62,13 @@ const showData = (poke) => {
             modalBackground.appendChild(modalContent);
 
             modal.style.display = "block";
-            
+
 
             let numTextModal = document.createElement("h2");
             numTextModal.innerText = "N° " + e.num;
             numTextModal.setAttribute("id", "pokenum-modal");  // poke num es el h2 que contiene el numero de la data
             modalContent.appendChild(numTextModal);
-            
+
             let nameTextModal = document.createElement("h2");
             nameTextModal.innerText = e.name;
             nameTextModal.setAttribute("id", "pokename-modal");  // pokename es el button que contiene el nombre de la data
@@ -79,18 +79,19 @@ const showData = (poke) => {
             imgPokeModal.setAttribute("id", "pokeimg-modal");   // pokeimg es la img que contiene la imagen de la data
             modalContent.appendChild(imgPokeModal)
 
-            
-
             e.type.forEach((element) => {
-            let typeModal = document.createElement("h2");
-            typeModal.innerText = element;           
-            typeModal.setAttribute("id", "type-modal");
-            modalContent.appendChild(typeModal);
-        });
+                let typeModal = document.createElement("h2");
+                typeModal.innerText = element;
+                typeModal.setAttribute("id", "type-modal");
+                modalContent.appendChild(typeModal);
 
-           let lineModal = document.createElement("div");
-           lineModal.setAttribute("id", "line-modal");
-           modalContent.appendChild(lineModal);
+            });
+
+
+
+            let lineModal = document.createElement("div");
+            lineModal.setAttribute("id", "line-modal");
+            modalContent.appendChild(lineModal);
 
 
             let heightModal = document.createElement("h2");
@@ -102,34 +103,29 @@ const showData = (poke) => {
             weightModal.innerText = "weight: " + e.size.weight;
             weightModal.setAttribute("id", "weight-modal");
             modalContent.appendChild(weightModal);
-           
+
             let textResistant = document.createElement("h2");
             textResistant.setAttribute("id", "text-resistant");
             textResistant.innerText = "Resistant";
             modalContent.appendChild(textResistant);
 
             e.resistant.forEach((element) => {
-            let resistantModal = document.createElement("h2");
-            resistantModal.innerText = element;
-            resistantModal.setAttribute("id", "resistant-modal");
-            modalContent.appendChild(resistantModal);
-        });
-            
-        
-        
-      
-            
-                
-                
+                let resistantModal = document.createElement("button");
+                resistantModal.innerText = element;
+                resistantModal.setAttribute("id", "resistant-modal");
+                modalContent.appendChild(resistantModal);
+            });
+
+
         });
 
 
     });
 };
 
-let select = document.getElementById("order-select");
-select.addEventListener('change', () => {
-    let orderFuction = orderData(allData, select.value);
+let selectOrder = document.getElementById("order-select");
+selectOrder.addEventListener('change', () => {
+    let orderFuction = orderData(allData, selectOrder.value);
     document.getElementById("cards").innerHTML = " ";
     showData(orderFuction);
 });
@@ -145,11 +141,12 @@ document.getElementById("btn-pokedex").addEventListener("click", () => {
 });
 
 
-
-
-
-
-
+let selectType = document.getElementById("filter-select");
+selectType.addEventListener('change', () => {
+    let filterFuction = filterData(allData, selectType.value);
+    document.getElementById("cards").innerHTML = " ";
+    showData(filterFuction);
+});
 
 
 

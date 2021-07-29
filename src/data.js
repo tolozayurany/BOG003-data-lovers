@@ -43,3 +43,15 @@ export const orderData = (data, sortBy) => {
   }
   
 };
+
+
+export const filterData = (data, condition) => {
+
+  if (condition === "filter-default" ) {
+    return data;
+  } else{
+
+let filterType = data.filter((el) => el.type.includes(condition));
+return filterType;
+}
+};
