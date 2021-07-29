@@ -192,12 +192,14 @@ footer h6 {
 box-shadow: 4px 4px 4px 4px rgb(129, 129, 129);
 }
 
-#order-select  {
-  display: flex;
+.order-filter {
+  display: inline-flex;
   position: relative;
-  left: 80%;
+  left: 75%;
+  margin-left: 2%;
   margin-top: 2%;
   width: 9%;
+  min-width: 90px;
   height: 5vh;
   border-radius: 20px;
   font-size: 3vh;
@@ -208,11 +210,11 @@ box-shadow: 4px 4px 4px 4px rgb(129, 129, 129);
 
 }
 option {
-  background-color:#4f60d18e;  
+  background-color:#6271cf8e;  
   font-family: 'Lato', sans-serif;
   color: rgb(23, 24, 24);
   font-weight: bold;
-  
+  font-size: smaller;
 }
 
 
@@ -334,10 +336,14 @@ option {
 
 #resistant-modal{
   display: inline-flex;
-  /*border: 3px solid aqua;*/
   border-radius: 20px;
-  color: rgba(46, 46, 46);
+  color: rgb(19, 18, 18) ;
   font-size: 2.5vh;
   font-family: 'Lato', sans-serif;
   margin: 1%;
-}
+  width: 18%;
+  left: 8%;
+  background-color: rgba(255, 255, 255, 0.61);
+} 
+
+

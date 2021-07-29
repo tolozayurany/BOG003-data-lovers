@@ -1,4 +1,4 @@
-import { orderData } from './data.js';
+import { orderData, filterData } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 
@@ -85,6 +85,7 @@ const showData = (poke) => {
             typeModal.innerText = element;           
             typeModal.setAttribute("id", "type-modal");
             modalContent.appendChild(typeModal);
+
         });
 
            let lineModal = document.createElement("div");
@@ -108,30 +109,17 @@ const showData = (poke) => {
             modalContent.appendChild(textResistant);
 
             e.resistant.forEach((element) => {
-            let resistantModal = document.createElement("h2");
+            let resistantModal = document.createElement("button");
             resistantModal.innerText = element;
             resistantModal.setAttribute("id", "resistant-modal");
             modalContent.appendChild(resistantModal);
-        });
-            
-        
-        
-      
-            
+        });  
                 
-                
-        });
-
-
+        }); 
     });
 };
 
-let select = document.getElementById("order-select");
-select.addEventListener('change', () => {
-    let orderFuction = orderData(allData, select.value);
-    document.getElementById("cards").innerHTML = " ";
-    showData(orderFuction);
-});
+
 
 
 document.getElementById("btn-pokedex").addEventListener("click", () => {
@@ -145,11 +133,24 @@ document.getElementById("btn-pokedex").addEventListener("click", () => {
 });
 
 
+let selectOrder = document.getElementById("order-select");
+selectOrder.addEventListener('change', () => {
+    let orderFuction = orderData(allData, selectOrder.value);
+    document.getElementById("cards").innerHTML = " ";
+    showData(orderFuction);
+});
 
 
 
+let selectType = document.getElementById("filter-select");
+selectType.addEventListener('change', () => {
+    let filterFuction = filterData(allData, selectType.value);
+    document.getElementById("cards").innerHTML = " ";
+    showData(filterFuction);
+});
+    
 
-
+ 
 
 
 
