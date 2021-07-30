@@ -198,6 +198,7 @@ box-shadow: 4px 4px 4px 4px rgb(129, 129, 129);
   left: 75%;
   margin-left: 2%;
   margin-top: 2%;
+  margin-left: 2%;
   width: 9%;
   min-width: 100px;
   height: 5vh;
@@ -209,6 +210,9 @@ box-shadow: 4px 4px 4px 4px rgb(129, 129, 129);
   background:  linear-gradient(#3ad0d594, #3a4fd58e);
 
 }
+
+
+
 option {
   background-color:#6271cf8e;  
   font-family: 'Lato', sans-serif;
