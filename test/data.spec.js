@@ -20,6 +20,10 @@ describe('orderData', () => {
   it('Debería retornar venusaur, ivysaur, bulbasaur para bulbasaur, venusaur, ivysaur', () => {
     expect(orderData(name, 'Z-A')).toEqual(orderNamesZa);
   });
+ 
+  it('deberia retornar name para la opción " "', () => {
+    expect(orderData(name, " ")).toEqual(name);
+  });
 
   it('Debería retornar 001, 002, 003 para 001, 003, 002', () => {
     expect(orderData(num, 'asc')).toEqual(orderNumAsc);
@@ -29,6 +33,11 @@ describe('orderData', () => {
     expect(orderData(num, 'des')).toEqual(orderNumDes);
   });
 
+  it('deberia retornar num para la opción " "', () => {
+    expect(orderData(num, " ")).toEqual(num);
+  });
+  
+ 
 });
 
 
@@ -51,5 +60,10 @@ describe('filterData', () => {
   it('deberia retornar objetos con tipo "grass" para la opción "grass"', () => {
     expect(filterData(firstArr, 'grass')).toEqual(arrayTypeGrass);
   });
+
+  it('deberia retornar el array que recibe "fisrtArr para la opción "filter-default"', () => {
+    expect(filterData(firstArr,"filter-default")).toEqual(firstArr);
+  });
+
 
 });

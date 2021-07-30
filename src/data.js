@@ -30,7 +30,7 @@ export const orderData = (data, sortBy) => {
     if (a.num < b.num) {
       return -1;
     }
-    
+    return 0;
   });
 
   if (sortBy === "asc" || sortBy === "order-default" ) {
@@ -49,7 +49,7 @@ export const filterData = (data, condition) => {
 
 if (condition === "filter-default") {
   return data;
-}
+} 
 
    let filterType = data.filter((el) => el.type.includes(condition));
      

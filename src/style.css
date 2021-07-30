@@ -175,14 +175,14 @@ footer h6 {
 #btn-pokename {
   display:  flex;
   position: relative;
-  left: 20%;
+  left: 13%;
   bottom: 220px;
   align-items:center;
   justify-content:center ;
   font-size: 3vh;
   color: rgb(29, 29, 29);
   font-family: 'Denk One', sans-serif;
-  width: 150px;
+  width: 180px;
   height: 30px;
   background-color: rgba(99, 99, 99, 0.096);;
   border-radius: 20px;
@@ -199,10 +199,10 @@ box-shadow: 4px 4px 4px 4px rgb(129, 129, 129);
   margin-left: 2%;
   margin-top: 2%;
   width: 9%;
-  min-width: 90px;
+  min-width: 100px;
   height: 5vh;
   border-radius: 20px;
-  font-size: 3vh;
+  font-size: 20px;
   font-family: 'Lato', sans-serif;
   color: rgb(23, 24, 24);
   font-weight: bold;
@@ -215,6 +215,7 @@ option {
   color: rgb(23, 24, 24);
   font-weight: bold;
   font-size: smaller;
+  
 }
 
 
@@ -276,7 +277,6 @@ option {
   width:auto;
   font-family: 'Lato', sans-serif;
   color: rgba(46, 46, 46);
-  /*border: 2px solid rgb(0, 89, 255);*/
   margin: 1%;
    
 }
@@ -285,19 +285,21 @@ option {
   display: block;
  position: relative;
  left: 35%;
-  /*border: 2px solid blueviolet;*/
   margin: 1%;
   
 }
 
 #type-modal{
   display: inline-flex;
-  width: 15%;
-  /*border: 2px solid brown;*/
   font-family: 'Lato', sans-serif;
-  color: rgba(46, 46, 46);
+  color: rgb(255, 255, 255);
   font-size: 3vh;
   margin: 1%;
+  border-radius: 15px;
+  background-color: rgba(10, 201, 159, 0.801);
+  width: 20%;
+  height: 25px;
+  justify-content: center;
 }
 
 #line-modal {
@@ -317,33 +319,35 @@ option {
   font-family: 'Lato', sans-serif;
   color: rgba(46, 46, 46);
   font-size: 2.5vh;
-  /*border: 2px solid gold;*/
   margin: 1%;
 }
 
 
 #text-resistant {
   display:flex;
-  color: rgb(56, 55, 55);
+  color: rgb(5, 1, 1);
   font-family: 'Lato', sans-serif;
-  font-size: 3vh;
-  /*border: 2px solid rgb(225, 0, 255);*/
-  width: 20%;
+  font-size: 2.5vh;
   position: relative;
-  left: 40%;
-  margin: 1%;
+  left: 37%;
+  margin: 3%;
+  font-weight: bold;
+  
+  
 }
 
 #resistant-modal{
   display: inline-flex;
-  border-radius: 20px;
-  color: rgb(19, 18, 18) ;
+  border-radius: 15px;
+  color: rgb(253, 253, 255) ;
   font-size: 2.5vh;
   font-family: 'Lato', sans-serif;
   margin: 1%;
-  width: 18%;
+  width: 20%;
   left: 8%;
-  background-color: rgba(255, 255, 255, 0.61);
+  height: 20px;
+  justify-content: center;
+  background-color: rgba(71, 70, 71, 0.801);
 } 
 
 

@@ -69,7 +69,7 @@ const showData = (poke) => {
             modalContent.appendChild(numTextModal);
             
             let nameTextModal = document.createElement("h2");
-            nameTextModal.innerText = e.name;
+            nameTextModal.innerText = e.name.slice(0,1).toUpperCase() + e.name.slice(1,e.name.length);
             nameTextModal.setAttribute("id", "pokename-modal");  // pokename es el button que contiene el nombre de la data
             modalContent.appendChild(nameTextModal);
 
@@ -105,11 +105,11 @@ const showData = (poke) => {
            
             let textResistant = document.createElement("h2");
             textResistant.setAttribute("id", "text-resistant");
-            textResistant.innerText = "Resistant";
+            textResistant.innerText = "RESISTANT";
             modalContent.appendChild(textResistant);
 
             e.resistant.forEach((element) => {
-            let resistantModal = document.createElement("button");
+            let resistantModal = document.createElement("h2");
             resistantModal.innerText = element;
             resistantModal.setAttribute("id", "resistant-modal");
             modalContent.appendChild(resistantModal);
