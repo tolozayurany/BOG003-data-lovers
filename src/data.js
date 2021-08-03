@@ -58,29 +58,39 @@ export const filterData = (data, condition) => {
 
 };
 
-
-/*export const computeStats = (data) => {
-
-  let sumAtt = 0; 
-  let sumDef = 0;
-  data.reduce((a, b) => 
-    sumAtt = a + parseInt(b.stats["base-attack"])  //El ,0 es el valor inicial que se le da al argumento a
-    //sumDef = a + parseInt(b.stats["base-defense"]),0 
-    
-);
-
-return (sumAtt / data.length).toFixed(2);
-};*/
-
-export const computeStats = (data) => {
+export const attack = (data) => {
+ 
+  
   let sumAtt = 0;
-  let sumDef = 0;
-  data.map(element => {
-    sumAtt = sumAtt + parseInt(element.stats["base-attack"]);
-    sumDef = sumDef + parseInt(element.stats["base-defense"]);
+  
+data.map(element => {
 
+  sumAtt = sumAtt + parseInt(element.stats["base-attack"]); 
 
-}); 
+  
+      
+   });
+    return (sumAtt / data.length).toFixed(2);
 
-return (sumAtt /  data.length).toFixed(2) + " " + (sumDef / data.length).toFixed(2);;
 };
+
+
+  export const defense = (data) => { 
+  
+    let sumDef = 0;
+    
+  data.map(element => {
+  
+    sumDef = sumDef + parseInt(element.stats["base-defense"]); 
+        
+     });
+     
+    return (sumDef/ data.length).toFixed(2);
+
+};
+
+
+
+
+
+

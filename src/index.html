@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poke-Fans</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <title>Poke-Fans</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet" />
-</head>
+  <body id="bdy">
+    <section class="containerhder" id="headersection">
+      <header id="hder">
+        <img src="img/logopequeño.png" alt="short-logo" id="img-logo-hder" />
 
-<body id="bdy">
-  <section class="containerhder" id="headersection">
-    <header id="hder">
-      <img src="img/logopequeño.png" alt="short-logo" id="img-logo-hder" />
-
-      <nav>
-        <a id="btn-home">Home</a>
-        <a id="btn-pokedex">PokeDex</a>
-        <a id="btn-statistics">Chart</a>
-      </nav>
-    </header>
-  </section>
-
-  <main>
-
-    <section id="screenwelcome">
-
-      <h1 class="wcometitle">¡Welcome Fans!</h1>
-      <h6 class="wcometext">¡Discover the abilities of Kanto and Johto's<br>pokémon
-        and conquer more battles!</h6>
-      <img src="./img/logopokefans.png" alt="logo" id="logo">
+        <nav>
+          <a id="btn-home">Home</a>
+          <a id="btn-pokedex">PokeDex</a>
+          <a id="btn-chart">Chart</a>
+        </nav>
+      </header>
     </section>
 
-    <section id="screenpokedex" style="display: none;">
+    <main id="main">
+      <section id="screenwelcome">
+        <h1 class="wcometitle">¡Welcome Fans!</h1>
+        <h6 class="wcometext">
+          ¡Discover the abilities of Kanto and Johto's<br />pokémon and conquer
+          more battles!
+        </h6>
+        <img src="./img/logopokefans.png" alt="logo" id="logo" />
+      </section>
 
+      <section id="screenpokedex" style="display: none">
+        <select id="order-select" class="order-filter" type="">
+          <option value="order-default">Order</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+          <option value="asc">001-251</option>
+          <option value="des">251-001</option>
+        </select>
 
-      <select id="order-select" class="order-filter" type="">
-        <option value="order-default" >Order</option>
-        <option value="A-Z">A-Z</option>
-        <option value="Z-A">Z-A</option>
-        <option value="asc">001-251</option>
-        <option value="des">251-001</option>
-      </select>
+        <select id="filter-select" class="order-filter">
+          <option value="filter-default" size="5">Type</option>
+          <option value="steel">Steel</option>
+          <option value="water">Water</option>
+          <option value="bug">Bug</option>
+          <option value="dragon">Dragon</option>
+          <option value="electric">Electric</option>
+          <option value="ghost">Ghost</option>
+          <option value="fire">Fire</option>
+          <option value="fairy">Fairy</option>
+          <option value="ice">Ice</option>
+          <option value="fighting">Fighting</option>
+          <option value="normal">Normal</option>
+          <option value="grass">Grass</option>
+          <option value="psychic">Psychic</option>
+          <option value="rock">Rock</option>
+          <option value="dark">Dark</option>
+          <option value="ground">Ground</option>
+          <option value="poison">Poison</option>
+          <option value="flying">Flying</option>
+        </select>
 
-      <select id="filter-select" class="order-filter">
-        <option value="filter-default" size="5" >Type</option>
-        <option value="steel">Steel</option>
-        <option value="water">Water</option>
-        <option value="bug">Bug</option>
-        <option value="dragon">Dragon</option>
-        <option value="electric">Electric</option>
-        <option value="ghost">Ghost</option>
-        <option value="fire">Fire</option>
-        <option value="fairy">Fairy</option>
-        <option value="ice">Ice</option>
-        <option value="fighting">Fighting</option>
-        <option value="normal">Normal</option>
-        <option value="grass">Grass</option>
-        <option value="psychic">Psychic</option>
-        <option value="rock">Rock</option>
-        <option value="dark">Dark</option>
-        <option value="ground">Ground</option>
-        <option value="poison">Poison</option>
-        <option value="flying">Flying</option>
-
-      </select>
-
-
-      <div id="cards"></div>
-      <div id="modal">
-        <div id="modal-content">
-
+        <div id="cards"></div>
+        <div id="modal">
+          <div id="modal-content"></div>
         </div>
-      </div>
+      </section>
 
-    </section>
+      <section id="screenchart" style="display: none">
+        <div id="content-chart">
+          <div id="textchart">
+            <h1>Average defense and attack and some curious data about your pokemon</h1>
+          </div>
+          <div id="chart" >
+            <canvas id="myChart" style="width: 400px; height: 400px"></canvas>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+      </section>
+    </main>
 
+    <footer>
+      <h6>© Poke Fans-2021 By Yurany y Lorena</h6>
+    </footer>
 
-  </main>
-
-
-  <footer>
-    <h6>© Poke Fans-2021 By Yurany y Lorena</h6>
-
-  </footer>
-
-  <script src="main.js" type="module"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js" type="module"></script>
+    <script src="chart.js" type="module"></script>
+  </body>
 </html>
-

@@ -9,21 +9,30 @@ html {
   
 }
 
-body {
+body{
+  background: #F9F8E8;
+  border: 3px solid red;
+  
+}
+#screenwelcome {
+
+  border: 3px solid rgb(114, 13, 245);
   background: url(./img/fondopoke.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   display: flex;
-  min-height: 100vh;
+  height: 100%;
   flex-direction: column;
-  
 }
+
+
 
 .containerhder {
   display: flex;
   flex-flow: row wrap;
+  border: 3px solid rgb(166, 255, 0);
 }
 
 header {
@@ -36,7 +45,7 @@ header {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
- 
+  border: 3px solid rgb(0, 255, 170);
  
 }
 
@@ -78,8 +87,8 @@ header nav a:hover {
 }
 
 main{
-    flex:1;
-
+    
+    border: 3px solid rgb(8, 2, 2);
 }
 
 .wcometitle {
@@ -89,6 +98,7 @@ main{
     font-family: 'Denk One', sans-serif;
     font-size: 60px;
     color: rgba(8, 34, 78, 0.85);  
+    
 }
   
 .wcometext {
@@ -98,6 +108,7 @@ main{
   font-family:  sans-serif;
   font-size: 20px;
   color: rgba(54, 54, 54, 0.89); 
+  
 }
   
 #logo {
@@ -118,6 +129,7 @@ footer {
     height: 30px;
     position: fixed;
     bottom: 0;
+    border: 3px solid rgb(25, 0, 255);
 }
 
 footer h6 {
@@ -343,7 +355,7 @@ option {
 #resistant-modal{
   display: inline-flex;
   border-radius: 15px;
-  color: rgb(253, 253, 255) ;
+  color: rgb(253, 253, 255);
   font-size: 2.5vh;
   font-family: 'Lato', sans-serif;
   margin: 1%;
@@ -351,7 +363,46 @@ option {
   left: 8%;
   height: 20px;
   justify-content: center;
-  background-color: rgba(71, 70, 71, 0.801);
+  background-color: rgba(101, 68, 245, 0.877);
 } 
 
 
+
+#screenpokedex {
+
+  border: 3px solid rgb(94, 91, 241);
+}
+
+#content-chart {
+display: block;
+border: 3px solid rgb(91, 241, 241);
+width: 50%;
+height: 100%;
+}
+
+
+
+#chart {
+  display: flex;
+  border: 3px solid rgb(241, 91, 154);
+  position: relative;
+  left: 50px ;
+  top: 70px;
+  width: 350px;
+  
+}
+
+#textchart {
+  display: flex;
+  color: rgba(8, 34, 78, 0.75);
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  border: 3px solid rgb(236, 2, 100);
+  width:50%;
+  height: 100%;
+  position: relative;
+  top: 30px;
+  left: 100px;
+  
+}
