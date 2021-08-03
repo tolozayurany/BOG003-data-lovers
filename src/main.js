@@ -1,4 +1,4 @@
-import { orderData, filterData } from './data.js';
+import { orderData, filterData, computeStats } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 
@@ -70,7 +70,7 @@ const showData = (poke) => {
             modalContent.appendChild(numTextModal);
 
             let nameTextModal = document.createElement("h2");
-            nameTextModal.innerText = e.name.slice(0,1).toUpperCase() + e.name.slice(1,e.name.length);
+            nameTextModal.innerText = e.name.slice(0, 1).toUpperCase() + e.name.slice(1, e.name.length);
             nameTextModal.setAttribute("id", "pokename-modal");  // pokename es el button que contiene el nombre de la data
             modalContent.appendChild(nameTextModal);
 
@@ -80,12 +80,12 @@ const showData = (poke) => {
             modalContent.appendChild(imgPokeModal)
 
             e.type.forEach((element) => {
-            let typeModal = document.createElement("h2");
-            typeModal.innerText = element;           
-            typeModal.setAttribute("id", "type-modal");
-            modalContent.appendChild(typeModal);
+                let typeModal = document.createElement("h2");
+                typeModal.innerText = element;
+                typeModal.setAttribute("id", "type-modal");
+                modalContent.appendChild(typeModal);
 
-        });
+            });
 
 
 
@@ -110,13 +110,13 @@ const showData = (poke) => {
             modalContent.appendChild(textResistant);
 
             e.resistant.forEach((element) => {
-            let resistantModal = document.createElement("h2");
-            resistantModal.innerText = element;
-            resistantModal.setAttribute("id", "resistant-modal");
-            modalContent.appendChild(resistantModal);
-        });  
-                
-        }); 
+                let resistantModal = document.createElement("h2");
+                resistantModal.innerText = element;
+                resistantModal.setAttribute("id", "resistant-modal");
+                modalContent.appendChild(resistantModal);
+            });
+
+        });
     });
 };
 
@@ -148,10 +148,8 @@ selectType.addEventListener('change', () => {
     document.getElementById("cards").innerHTML = " ";
     showData(filterFuction);
 });
-    
-
- 
 
 
 
+console.log(computeStats(allData));
 
