@@ -1,4 +1,5 @@
-import { orderData, filterData } from '../src/data.js';
+import { orderData, filterData, attack, defense } from '../src/data.js';
+import { Chart } from './chart.js';
 
 
 let name = [{ name: "bulbasaur" }, { name: "venusaur" }, { name: "ivysaur" }];
@@ -67,3 +68,47 @@ describe('filterData', () => {
 
 
 });
+
+
+let avgAttack = [{stats: {"base-attack": "118"}}, {stats:{"base-attack": "151"}}, {stats:{"base-attack": "198"}}];
+let avgAtt =  "155.67";
+
+
+
+describe('attack', () => {
+  it('deberia ser una funcion ', () => {
+    expect(typeof attack).toBe('function');
+  });
+  
+
+  it('deberia retornar el promedio para "base-attack"', () => {
+    expect(attack(avgAttack)).toEqual(avgAtt);
+  });
+
+  });
+
+
+  let avgDefense = [{stats: {"base-defense": "111"}}, {stats:{"base-defense": "143"}}, {stats:{"base-defense": "189"}}];
+let avgDef =  "147.67";
+
+
+
+describe('defense', () => {
+  it('deberia ser una funcion ', () => {
+    expect(typeof defense).toBe('function');
+  });
+  
+
+  it('deberia retornar el promedio para "base-defense"', () => {
+    expect(defense(avgDefense)).toEqual(avgDef);
+  });
+
+  });
+  
+  
+  describe('Chart', () => {
+    it('deberia ser una funcion ', () => {
+      expect(typeof Chart).toBe('function');
+    });
+
+  });

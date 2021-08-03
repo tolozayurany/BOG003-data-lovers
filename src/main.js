@@ -34,7 +34,7 @@ const showData = (poke) => {
 
 
         let nameTextBtn = document.createElement("button");
-        nameTextBtn.innerText = e.name;
+        nameTextBtn.innerText = e.name.slice(0,1).toUpperCase() + e.name.slice(1,e.name.length);
         nameTextBtn.setAttribute("id", "btn-pokename");  // btn-pokename es el button que contiene el nombre de la data
         backgroundCard.appendChild(nameTextBtn);
 
@@ -81,7 +81,7 @@ const showData = (poke) => {
 
             e.type.forEach((element) => {
             let typeModal = document.createElement("h2");
-            typeModal.innerText = element;           
+            typeModal.innerText = element.slice(0,1).toUpperCase() + element.slice(1,element.length);           
             typeModal.setAttribute("id", "type-modal");
             modalContent.appendChild(typeModal);
 
@@ -95,12 +95,12 @@ const showData = (poke) => {
 
 
             let heightModal = document.createElement("h2");
-            heightModal.innerText = "height: " + e.size.height;
+            heightModal.innerText = "Height: " + e.size.height;
             heightModal.setAttribute("id", "height-modal");
             modalContent.appendChild(heightModal);
 
             let weightModal = document.createElement("h2");
-            weightModal.innerText = "weight: " + e.size.weight;
+            weightModal.innerText = "Weight: " + e.size.weight;
             weightModal.setAttribute("id", "weight-modal");
             modalContent.appendChild(weightModal);
 
@@ -111,7 +111,7 @@ const showData = (poke) => {
 
             e.resistant.forEach((element) => {
             let resistantModal = document.createElement("h2");
-            resistantModal.innerText = element;
+            resistantModal.innerText = element.slice(0,1).toUpperCase() + element.slice(1,element.length);
             resistantModal.setAttribute("id", "resistant-modal");
             modalContent.appendChild(resistantModal);
         });  
@@ -120,16 +120,36 @@ const showData = (poke) => {
     });
 };
 
+document.getElementById("btn-home").addEventListener("click", () => {
+      
+    document.getElementById("screenwelcome").style.display = "block";
+    document.getElementById("screenpokedex").style.display = "none";
+    document.getElementById("screenchart").style.display = "none";
+
+});
 
 
 
 document.getElementById("btn-pokedex").addEventListener("click", () => {
     document.getElementById("cards").innerHTML = " ";
     document.getElementById("screenwelcome").style.display = "none";
-    document.getElementById("bdy").style.background = "#F9F8E8";
+    document.getElementById("screenpokedex").style.background = "#F9F8E8";
     document.getElementById("screenpokedex").style.display = "block";
+    document.getElementById("screenchart").style.display = "none";
     orderData(allData, "order-default");
     showData(allData);
+});
+
+
+document.getElementById("btn-chart").addEventListener("click", () => {
+    
+
+    document.getElementById("screenwelcome").style.display = "none";
+    document.getElementById("screenpokedex").style.display = "none";
+    document.body.style.background = "#F9F8E8";
+    document.getElementById("screenchart").style.display = "block";
+    
+    
 });
 
 
@@ -150,8 +170,45 @@ selectType.addEventListener('change', () => {
 });
     
 
+
+/*var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Attack', 'Defense'],
+        datasets: [{
+            label: '# of Votes',
+            data: [
+                4,
+                5
+            ],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)'
+             ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});*/
+
+
+
+
+    
+
+
+
+
  
-
-
-
 

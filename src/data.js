@@ -58,3 +58,39 @@ if (condition === "filter-default") {
 
 };
 
+export const attack = (data) => {
+ 
+  
+  let sumAtt = 0;
+  
+data.map(element => {
+
+  sumAtt = sumAtt + parseInt(element.stats["base-attack"]); 
+
+  
+      
+   });
+    return (sumAtt / data.length).toFixed(2);
+
+};
+
+
+  export const defense = (data) => { 
+  
+    let sumDef = 0;
+    
+  data.map(element => {
+  
+    sumDef = sumDef + parseInt(element.stats["base-defense"]); 
+        
+     });
+     
+    return (sumDef/ data.length).toFixed(2);
+
+};
+
+
+
+
+
+
