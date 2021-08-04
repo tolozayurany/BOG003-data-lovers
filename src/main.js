@@ -143,7 +143,7 @@ document.getElementById("btn-pokedex").addEventListener("click", () => {
 
 document.getElementById("btn-chart").addEventListener("click", () => {
     
-
+   
     document.getElementById("screenwelcome").style.display = "none";
     document.getElementById("screenpokedex").style.display = "none";
     document.body.style.background = "#F9F8E8";
