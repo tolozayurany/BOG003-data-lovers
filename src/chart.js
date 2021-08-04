@@ -16,39 +16,43 @@ backgroundDef.addColorStop(0, '#3BD7F9');
 backgroundDef.addColorStop(1, '#0F39A5');
 
 
-window.onload = () => {
-const myChart = new Chart(chart, {
-    type: 'bar',
-    data: {
-        labels: ['Base-attack', 'Base-defense'],
-        datasets: [{
-           label: 'Average', 
-            data: [
-                attack(allDataChart),
-                defense(allDataChart)
-            ],
-            backgroundColor: [
-                backgroundAtt,
-                backgroundDef
-             ],
-           
-            
-        }]
-    },
-    options: {
-       
-        scales: {
-            
-            y: [{
-                beginAtZero: true,
-          }]
-        },
-      
-     },
-     
 
-});
-    window.myChart = myChart;
-};
+
+        const myChart = new Chart(chart, {
+            type: 'bar',
+            data: {
+                labels: ['Base-attack', 'Base-defense'],
+                datasets: [{
+                   label: 'Average', 
+                    data: [
+                        attack(allDataChart),
+                        defense(allDataChart)
+                    ],
+                    backgroundColor: [
+                        backgroundAtt,
+                        backgroundDef
+                     ],
+                   
+                    
+                }]
+            },
+            options: {
+               
+                scales: {
+                    
+                    y: [{
+                        beginAtZero: true,
+                  }]
+                },
+              
+             },
+             
+        
+        });
+        window.myChart = myChart;
+   
+
+   
+
 
 

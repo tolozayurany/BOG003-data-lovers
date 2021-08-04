@@ -1,5 +1,5 @@
 import { orderData, filterData, attack, defense } from '../src/data.js';
-import { Chart } from './chart.js';
+
 
 
 let name = [{ name: "bulbasaur" }, { name: "venusaur" }, { name: "ivysaur" }];
@@ -106,9 +106,4 @@ describe('defense', () => {
   });
   
   
-  describe('Chart', () => {
-    it('deberia ser una funcion ', () => {
-      expect(typeof Chart).toBe('function');
-    });
-
-  });
+ 
