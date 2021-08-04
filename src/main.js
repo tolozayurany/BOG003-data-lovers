@@ -1,4 +1,4 @@
-import { orderData, filterData, computeStats } from './data.js';
+import { orderData, filterData } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 
@@ -133,7 +133,6 @@ document.getElementById("btn-home").addEventListener("click", () => {
 document.getElementById("btn-pokedex").addEventListener("click", () => {
     document.getElementById("cards").innerHTML = " ";
     document.getElementById("screenwelcome").style.display = "none";
-    document.getElementById("screenpokedex").style.background = "#F9F8E8";
     document.getElementById("screenpokedex").style.display = "block";
     document.getElementById("screenchart").style.display = "none";
     orderData(allData, "order-default");
@@ -146,7 +145,6 @@ document.getElementById("btn-chart").addEventListener("click", () => {
 
     document.getElementById("screenwelcome").style.display = "none";
     document.getElementById("screenpokedex").style.display = "none";
-    document.body.style.background = "#F9F8E8";
     document.getElementById("screenchart").style.display = "block";
     
     
