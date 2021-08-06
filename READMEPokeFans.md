@@ -1,4 +1,4 @@
-# Poke Fans  <img src = "img/logopequeño.png" width="50px">
+# Poke Fans  <img src = "https://github.com/immarroquin/BOG003-data-lovers/blob/main/src/img/logopeque%C3%B1o.png" width="80px">
 
 ## Índice
 
@@ -27,7 +27,7 @@ Que los usuarios puedan conocer más a los pokemones en aspectos como nombre, n�
 ### ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
 Según la encuesta realizada a nuestros usuarios:
 
-<img src = "img/encuesta.png" width="300px">
+<img src ="https://github.com/immarroquin/BOG003-data-lovers/blob/main/src/img/img-readme/encuesta.png" width="300px">
 
 Los datos más relevantes son: nombre, número, imagen, tipo, habilidad porque los usuarios quieren conocer más a los pokemones y así poder elegir a los mejores.
 
