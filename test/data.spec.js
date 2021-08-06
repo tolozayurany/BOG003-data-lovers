@@ -1,6 +1,4 @@
-import { orderData, filterData, attack, defense } from '../src/data.js';
-
-
+import { orderData, filterData, attack, defense, maxHeight, minHeight } from '../src/data.js';
 
 let name = [{ name: "bulbasaur" }, { name: "venusaur" }, { name: "ivysaur" }];
 let orderNamesAz = [{ name: "bulbasaur" }, { name: "ivysaur" }, { name: "venusaur" }];
@@ -21,7 +19,7 @@ describe('orderData', () => {
   it('Debería retornar venusaur, ivysaur, bulbasaur para bulbasaur, venusaur, ivysaur', () => {
     expect(orderData(name, 'Z-A')).toEqual(orderNamesZa);
   });
- 
+
   it('deberia retornar name para la opción " "', () => {
     expect(orderData(name, " ")).toEqual(name);
   });
@@ -37,16 +35,16 @@ describe('orderData', () => {
   it('deberia retornar num para la opción " "', () => {
     expect(orderData(num, " ")).toEqual(num);
   });
-  
- 
+
+
 });
 
 
-let firstArr = [{name:"bulbasaur", type: ["poison", "grass"]},{name:"charmander",type:["fire"]}, {name: "kakuna",type:["bug", "poison"]}, {name: "oddish",type:["poison", "grass"] }];
+let firstArr = [{ name: "bulbasaur", type: ["poison", "grass"] }, { name: "charmander", type: ["fire"] }, { name: "kakuna", type: ["bug", "poison"] }, { name: "oddish", type: ["poison", "grass"] }];
 
-let arrayTypePoison = [{name:"bulbasaur",type:["poison","grass"] }, {name: "kakuna", type:["bug", "poison"]}, {name: "oddish", type:["poison", "grass"]}];
+let arrayTypePoison = [{ name: "bulbasaur", type: ["poison", "grass"] }, { name: "kakuna", type: ["bug", "poison"] }, { name: "oddish", type: ["poison", "grass"] }];
 
-let arrayTypeGrass = [{name:"bulbasaur", type: ["poison", "grass"]}, {name: "oddish",type:["poison", "grass"] }];
+let arrayTypeGrass = [{ name: "bulbasaur", type: ["poison", "grass"] }, { name: "oddish", type: ["poison", "grass"] }];
 
 describe('filterData', () => {
   it('deberia ser una funcion ', () => {
@@ -63,15 +61,14 @@ describe('filterData', () => {
   });
 
   it('deberia retornar el array que recibe "fisrtArr para la opción "filter-default"', () => {
-    expect(filterData(firstArr,"filter-default")).toEqual(firstArr);
+    expect(filterData(firstArr, "filter-default")).toEqual(firstArr);
   });
-
 
 });
 
 
-let avgAttack = [{stats: {"base-attack": "118"}}, {stats:{"base-attack": "151"}}, {stats:{"base-attack": "198"}}];
-let avgAtt =  "155.67";
+let avgAttack = [{ stats: { "base-attack": "118" } }, { stats: { "base-attack": "151" } }, { stats: { "base-attack": "198" } }];
+let avgAtt = "155.67";
 
 
 
@@ -79,31 +76,55 @@ describe('attack', () => {
   it('deberia ser una funcion ', () => {
     expect(typeof attack).toBe('function');
   });
-  
+
 
   it('deberia retornar el promedio para "base-attack"', () => {
     expect(attack(avgAttack)).toEqual(avgAtt);
   });
 
-  });
+});
 
 
-  let avgDefense = [{stats: {"base-defense": "111"}}, {stats:{"base-defense": "143"}}, {stats:{"base-defense": "189"}}];
-let avgDef =  "147.67";
-
-
+let avgDefense = [{ stats: { "base-defense": "111" } }, { stats: { "base-defense": "143" } }, { stats: { "base-defense": "189" } }];
+let avgDef = "147.67";
 
 describe('defense', () => {
   it('deberia ser una funcion ', () => {
     expect(typeof defense).toBe('function');
   });
-  
+
 
   it('deberia retornar el promedio para "base-defense"', () => {
     expect(defense(avgDefense)).toEqual(avgDef);
   });
 
+});
+
+let dataHeight = [{size: {"height":"1.70 m" }}, { size: {"height": "2.01 m"}}, {size: { "height": "1.09 m" }}];
+let heightest = {size: {"height": "2.01 m"}};
+
+describe('maxHeight', () => {
+  it('deberia ser una funcion ', () => {
+    expect(typeof maxHeight).toBe('function');
   });
-  
-  
- 
+
+
+  it('deberia retornar el valor máximo para la altura de los pokemon"', () => {
+    expect(maxHeight(dataHeight)).toEqual(heightest);
+  });
+
+});
+
+let shortest = {size: {"height": "1.09 m"}};
+
+describe('minHeight', () => {
+  it('deberia ser una funcion ', () => {
+    expect(typeof minHeight).toBe('function');
+  });
+
+
+  it('deberia retornar el valor minimo para la altura de los pokemon"', () => {
+    expect(minHeight(dataHeight)).toEqual(shortest);
+  });
+
+});

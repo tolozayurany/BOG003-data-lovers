@@ -11,8 +11,6 @@ export const orderData = (data, sortBy) => {
     if (a.name < b.name) {
       return -1;
     }
-
-
   });
 
   if (sortBy === "A-Z") {
@@ -41,7 +39,6 @@ export const orderData = (data, sortBy) => {
 
     return orderNum.reverse()
   }
-
 };
 
 
@@ -54,43 +51,64 @@ export const filterData = (data, condition) => {
   let filterType = data.filter((el) => el.type.includes(condition));
 
   return filterType;
-
-
 };
 
 export const attack = (data) => {
- 
-  
+
+
   let sumAtt = 0;
-  
-data.map(element => {
 
-  sumAtt = sumAtt + parseInt(element.stats["base-attack"]); 
-
-  
-      
-   });
-    return (sumAtt / data.length).toFixed(2);
-
-};
-
-
-  export const defense = (data) => { 
-  
-    let sumDef = 0;
-    
   data.map(element => {
-  
-    sumDef = sumDef + parseInt(element.stats["base-defense"]); 
-        
-     });
-     
-    return (sumDef/ data.length).toFixed(2);
+
+    sumAtt = sumAtt + parseInt(element.stats["base-attack"]);
+
+  });
+  return (sumAtt / data.length).toFixed(2);
 
 };
 
 
+export const defense = (data) => {
 
+  let sumDef = 0;
+
+  data.map(element => {
+
+    sumDef = sumDef + parseInt(element.stats["base-defense"]);
+
+  });
+
+  return (sumDef / data.length).toFixed(2);
+
+};
+
+export const maxHeight = (data) => {
+
+  let pokemonHeightest = data.reduce((a, b) => { 
+  
+    let max = a.size["height"] > b.size["height"] ? a : b;
+
+    return max;
+  
+  });
+
+  return pokemonHeightest;
+};
+
+
+
+export const minHeight = (data) => {
+
+  let pokemonSmallest = data.reduce((a, b) => { 
+  
+    let min = a.size["height"] < b.size["height"] ? a : b;
+
+    return min;
+  
+  });
+
+  return pokemonSmallest;
+};
 
 
 
