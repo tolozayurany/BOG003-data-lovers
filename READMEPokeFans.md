@@ -1,4 +1,4 @@
-<img src = "https://github.com/immarroquin/BOG003-data-lovers/blob/main/src/img/logopeque%C3%B1o.png" width="200px">
+<div style="text-align:center"><img src = "https://github.com/immarroquin/BOG003-data-lovers/blob/main/src/img/logopeque%C3%B1o.png" width="200px"></div>
 
 # Poke Fans  
 
@@ -24,7 +24,7 @@ Esta es una aplicación web enfocada en el juego Pokemon GO para usuarios princi
 
 Para conocer mejor a nuestros usuarios y sus preferencias, realizamos una investigación UX por medio de la siguiente encuesta:
 
-<img src ="https://github.com/immarroquin/BOG003-data-lovers/blob/main/src/img/img-readme/encuesta.png" width="400px" center>
+<img src ="https://github.com/immarroquin/BOG003-data-lovers/blob/main/src/img/img-readme/encuesta.png" width="400px">
 
 Los hallazgos de esta investigación fueron:  
 
@@ -53,13 +53,16 @@ Se realizaron sketch y diseños de la interfaz de nuestro producto para sitio we
 
 #### Web
 
+<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/sketchBaja.jpeg" width="500px">
+
 #### Mobile
 
 ### Prototipos de alta fidelidad 
 
 EL diseño de nuestra interfaz busca acercar al usuario al juego Pokemon GO, teniendo en cuenta sus colores y los mapas usados dentro de la aplicación.
 
-[Ver prototipos de alta fidelidad](https://www.figma.com/file/GjmnidhwDYPYuv8uCjgTQh/Data-Lovers-PokeFans?node-id=0%3A1).
+
+[Ver todos los prototipos de alta fidelidad](https://www.figma.com/file/GjmnidhwDYPYuv8uCjgTQh/Data-Lovers-PokeFans?node-id=0%3A1).
 
 ## 5. Diseño final del producto
 
@@ -81,7 +84,7 @@ Mediante los test de usabilidad pudimos encontrar varios aspectos a mejorar en n
 
 ## 7. Pruebas unitarias
 
-
+Se realizaron las respectivas pruebas unitarias a todas las funciones que hacían parte del código y se alcanzó un coverage del 100%. 
 
 ## 9. Checklist
 
