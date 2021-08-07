@@ -46,7 +46,7 @@ Los hallazgos de esta investigación fueron:
 
 ## 4. Prototipos
 
-Se realizaron sketch y diseños de la interfaz de nuestro producto para sitio web y para mobile. 
+Nuestro proyecto se enfoca en el diseño de la aplicación móvile de Pokemón GO, por lo que se manejan los colores de los mapas de la aplicación dentro de toda nuestra página web. Se realizaron los sketch y diseños de la interfaz de nuestro producto para sitio web y para mobile. 
 
 ### Prototipos de baja fidelidad
 
@@ -60,21 +60,26 @@ Se realizaron sketch y diseños de la interfaz de nuestro producto para sitio we
 
 EL diseño de nuestra interfaz busca acercar al usuario al juego Pokemon GO, teniendo en cuenta sus colores y los mapas usados dentro de la aplicación.
 
-* **Web** <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oWeb.PNG" width="500px">
-
-* **Mobile** <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oMobile.PNG" width="200px">
-
 [Ver todos los prototipos de alta fidelidad](https://www.figma.com/file/GjmnidhwDYPYuv8uCjgTQh/Data-Lovers-PokeFans?node-id=0%3A1).
+#### Web
+<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oWeb.PNG" width="500px">
+
+#### Mobile
+<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oMobile.PNG" width="200px">
+
 
 ## 5. Diseño final del producto
 
-El diseño final de nuestra aplicación respeta el diseño de la interfaz planteado en los prototipos y se encuentra publicada en GitHub Pages. 
-
-* **Web** <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/FinalWeb.PNG" width="500px">
-
-* **Mobile** <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/FinalMobile.PNG" width="200px">
+El diseño final de nuestra aplicación respeta el diseño de la interfaz planteado en los prototipos y se encuentra publicada en GitHub Pages.
 
 [Página web PokeFans](https://tolozayurany.github.io/PokeFans/src/index.html).
+
+#### Web
+ <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/FinalWeb.PNG" width="500px">
+
+#### Mobile
+<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/FinalMobile.PNG" width="200px">
+
 
 ## 6. Test de usabilidad
 
@@ -92,7 +97,7 @@ Mediante los test de usabilidad pudimos encontrar varios aspectos a mejorar en n
 
 Se realizaron las respectivas pruebas unitarias a todas las funciones que hacían parte del código y se alcanzó un coverage del 100%. 
 
- <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/UnitTest-PokeFans.PNG" width="400px">
+ <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/UnitTest-PokeFans.PNG" width="600px">
 
 ## 8. Checklist
 
