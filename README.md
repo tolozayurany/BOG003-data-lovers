@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src = "https://github.com/immarroquin/BOG003-data-lovers/blob/main/src/img/logopeque%C3%B1o.png" width="200px"></div>
+<img src = "https://github.com/immarroquin/BOG003-data-lovers/blob/main/src/img/logopeque%C3%B1o.png" width="200px">
 
 # Poke Fans  
 
@@ -62,10 +62,10 @@ EL diseño de nuestra interfaz busca acercar al usuario al juego Pokemon GO, ten
 
 [Ver todos los prototipos de alta fidelidad](https://www.figma.com/file/GjmnidhwDYPYuv8uCjgTQh/Data-Lovers-PokeFans?node-id=0%3A1).
 #### Web
-<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oWeb.PNG" width="500px">
+<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oWeb.PNG" width="600px">
 
 #### Mobile
-<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oMobile.PNG" width="200px">
+<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oMobile.PNG" width="300px">
 
 
 ## 5. Diseño final del producto
@@ -75,10 +75,10 @@ El diseño final de nuestra aplicación respeta el diseño de la interfaz plante
 [Página web PokeFans](https://tolozayurany.github.io/PokeFans/src/index.html).
 
 #### Web
- <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/FinalWeb.PNG" width="500px">
+ <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/FinalWeb.PNG" width="600px">
 
 #### Mobile
-<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/FinalMobile.PNG" width="200px">
+<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/FinalMobile.PNG" width="300px">
 
 
 ## 6. Test de usabilidad
