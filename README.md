@@ -46,7 +46,7 @@ Los hallazgos de esta investigación fueron:
 
 ## 4. Prototipos
 
-Nuestro proyecto se enfoca en el diseño de la aplicación móvile de Pokemón GO, por lo que se manejan los colores de los mapas de la aplicación dentro de toda nuestra página web. Se realizaron los sketch y diseños de la interfaz de nuestro producto para sitio web y para mobile. 
+Nuestro proyecto se enfoca en el diseño del aplicativo móvil de Pokemón GO, por lo que se manejan los colores de los mapas de la aplicación dentro de toda nuestra página web. Se realizaron los sketch y diseños de la interfaz de nuestro producto para sitio web y para mobile. 
 
 ### Prototipos de baja fidelidad
 
@@ -56,15 +56,19 @@ Nuestro proyecto se enfoca en el diseño de la aplicación móvile de Pokemón G
 
 #### Mobile
 
+<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/sketchBaja.jpeg" width="500px">
+
 ### Prototipos de alta fidelidad 
 
 EL diseño de nuestra interfaz busca acercar al usuario al juego Pokemon GO, teniendo en cuenta sus colores y los mapas usados dentro de la aplicación.
 
 [Ver todos los prototipos de alta fidelidad](https://www.figma.com/file/GjmnidhwDYPYuv8uCjgTQh/Data-Lovers-PokeFans?node-id=0%3A1).
+
 #### Web
 <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oWeb.PNG" width="600px">
 
 #### Mobile
+
 <img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/Dise%C3%B1oMobile.PNG" width="300px">
 
 
