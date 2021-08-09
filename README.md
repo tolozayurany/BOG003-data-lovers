@@ -1,6 +1,6 @@
 <img src = "https://github.com/immarroquin/BOG003-data-lovers/blob/main/src/img/logopeque%C3%B1o.png" width="200px">
 
-# Poke Fans  
+# Poke Fans  - Desarrollado por Lorena Marroquín y Yurany Toloza 
 
 ## Índice
 
