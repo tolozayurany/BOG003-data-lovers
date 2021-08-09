@@ -56,7 +56,7 @@ Nuestro proyecto se enfoca en el diseño del aplicativo móvil de Pokemón GO, p
 
 #### Mobile
 
-<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/sketchBaja.jpeg" width="500px">
+<img src ="https://github.com/tolozayurany/PokeFans/blob/main/src/img/img-readme/sketchmobile.jpeg" width="400px">
 
 ### Prototipos de alta fidelidad 
 
