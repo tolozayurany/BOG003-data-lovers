@@ -62,7 +62,7 @@ export const defense = (data) => {// defense es la funcion que da el promedio de
 
 export const maxHeight = (data) => { //maxHeight en la funcion que retorna en pokemon con mayor altura
   let pokemonHeightest = data.reduce((a, b) => {
-    let max = a.size["height"] > b.size["height"] ? a : b; //si el a es mayor que b retorna a de lo contrario b
+    let max = parseFloat(a.size["height"]) > parseFloat(b.size["height"]) ? a : b; //si el a es mayor que b retorna a de lo contrario b
     return max;
   });
   return pokemonHeightest;
