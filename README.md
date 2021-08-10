@@ -10,8 +10,8 @@ Desarrollado por Lorena Marroquín y Yurany Toloza
 * [3. Historias de usuario](#3-historias-de-usuario)
 * [4. Prototipos](#4-prototipos)
 * [5. Diseño final del producto](#5-diseño-final-del-producto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
+* [6. Test de usabilidad](#6-test-de-usabilidad)
+* [7. Pruebas unitarias](#7-pruebas-unitarias)
 * [8. Checklist](#8-checklist)
 
 ***
