@@ -1,12 +1,18 @@
 import { orderData, filterData, maxHeight, minHeight } from "./data.js";
-import data from "./data/pokemon/pokemon.js";
+//import data from "./data/pokemon/pokemon.js";
+
+fetch('./data/pokemon/pokemon.json')
+.then(response => response.json())
+.then(data => {
+
+
 
 let allData = data.pokemon;
 
 const showData = (poke) => {
   //Funcion que recorre la data y la muestra de manera organizada
   poke.forEach((e) => {
-    //El forech tiene un parametro (e) que sera el que representa a cada elemento de la data
+    //El foreach tiene un parametro (e) que sera el que representa a cada elemento de la data
     let backgroundCard = document.createElement("div");
     backgroundCard.setAttribute("id", "boxcard"); //boxcard es el div que contiene la tarjeta cardcontainer y la data principal de los pokemon
     let pokeFont = document.createElement("img");
@@ -187,3 +193,4 @@ heightShort.innerText =
   "I'm the shortest pokemon, my height is " + minHeight(allData).size.height;
 heightShort.setAttribute("id", "height-short"); //height-short es el h1 que contiene la altura del pokemon mas corto que esta en la card-short
 document.getElementById("card-short").appendChild(heightShort);
+});

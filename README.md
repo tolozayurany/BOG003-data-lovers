@@ -106,6 +106,7 @@ Se realizaron las respectivas pruebas unitarias a todas las funciones que hacía
 
 ## 8. Checklist
 
+* [x] Uso de Fetch.
 * [x] Usa VanillaJS.
 * [x] Pasa linter (`npm run pretest`)
 * [x] Pasa tests (`npm test`)
